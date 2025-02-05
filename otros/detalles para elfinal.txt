@@ -1,0 +1,26 @@
+
+todas las imagenes mismx estension
+
+queda feo por jemlo el titulo con tantos renglones pero no dimos espaciado horizontal ,er que onda eso
+
+fijate de si poes utilsar todos los h1 hasta h6
+
+insertate alung link de video y/o un videito chiquito propio que pueda usar (ej. estilos)
+
+ordena con comentarios y divs
+
+acomoda colores y fuentes
+
+fijarse en la consigna que habla de nesting y no e que como que este todo ben acomodado
+
+al final de todo formatelao bien
+
+de ultima ver si copilot o chatgpt te lo acomodan u ordenan
+
+preguntar si tenes que usar todo lo que vimos, ejemplo las diferentes formas de insercion cuando siempre la mas adecuada es por css aparte y no por guiones etc
+
+ver si poner diferetnes maneras de tamaño de fuente, procentaje tamao em
+
+espacia mas las cosas
+
+

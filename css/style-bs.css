@@ -1,0 +1,531 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Resetea las propiedades de margen y relleno y establece el modelo de caja en border-box. */
+
+
+/* BARRA DE TITULO */
+
+
+.banner-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ADD8E6;
+    /* Color de fondo */
+    justify-content: space-between;
+    /* Cambiar a space-between para separar los elementos */
+    white-space: nowrap;
+    /* Evita que el contenido se divida en varias líneas */
+    padding: 5px 5px;
+    /* Reducir padding para achicar el espacio vertical */
+    min-height: 30px;
+    /* Establecer una altura mínima más pequeña */
+    font-size: 14px;
+    /* Ajustar tamaño de fuente */
+
+
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%); 
+
+}
+
+.contact-info a {
+    color: #0C0C89; /* Ajustar color del texto de los enlaces a verde y usar !important para asegurar el cambio */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    margin-left: 5px;
+}
+
+.contact-info a:hover,
+.contact-info a:active {
+    color: #ffffff;
+}
+
+
+.social-icons {
+    display: flex;
+    align-items: center;
+
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%);
+}
+
+.banner-top a img {
+    transition: filter 0.3s ease; /* Añade una transición suave */
+}
+
+.banner-top a:hover img,
+.banner-top a:active img {
+    filter: brightness(0) invert(1); /* Cambia el color de la imagen a blanco */
+}
+
+
+.titulo-logo {
+
+    background-color: #0C0C89;
+    /* Color de fondo del encabezado */
+    /* Color del texto del encabezado */
+
+
+    display: flex;
+    /* Asegura que los elementos hijos se distribuyan */
+
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    /* -webkit-text-stroke: 2px #83E2E2; */
+
+
+    justify-content: space-between;
+    /* justify-content: Asegura que los elementos hijos se distribuyan */
+    /* space-between: Distribuye los elementos hijos de manera que haya el máximo espacio posible entre ellos */
+
+    padding: 20px;
+    /* Añade espacio interno alrededor del contenido del elemento */
+
+    /* margin: 20px; */
+    /* Añade espacio externo alrededor del elemento */
+
+    /* border: #83E2E2 5px dotted; */
+    /* border: Define el borde del elemento */
+    /* Estilo del borde */
+    /* solid: Borde sólido */
+    /* dashed: Borde de guiones */
+    /* dotted: Borde de puntos */
+    /* double: Borde doble */
+    /* groove: Borde con efecto de surco */
+    /* ridge: Borde con efecto de cresta */
+    /* inset: Borde con efecto de inserción */
+    /* outset: Borde con efecto de relieve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-logo {
+    align-items: center;
+    /* Alinea los elementos hijos verticalmente */
+}
+
+.titulo-logo img[src*="logo.png"] {
+    width: 180px;
+    /* Reducir el tamaño de la imagen */
+    height: auto;
+    /* Mantener la proporción de la imagen */
+    margin-left: auto;
+    /* Mantener la imagen a la derecha */
+    display: block;
+    /* Asegurar que la imagen se comporte como un bloque */
+}
+
+/* Configuración general del cuerpo */
+body {
+    background-color: #006290;
+    /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: "Ubuntu", serif;
+    /* Fuente del texto */
+    color: #FFFFFF;
+    /* Color del texto */
+    line-height: 1.6;
+}
+
+
+main {
+/* display: flex;  */
+    padding-left: 20px;
+    padding-top: 20px;
+    flex: 1;
+}
+
+/* Encabezado */
+
+.navbar {
+    background-color: #ADD8E6; /* Mismo color de fondo que banner-top */
+}
+
+.navbar-brand {
+    color: #0C0C89  !important; /* Color de los enlaces */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #0C0C89  !important; /* Color de los enlaces */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff  !important; /* Color de los enlaces al pasar el ratón por encima */
+    text-decoration: none; /* Asegúrate de que no haya subrayado */
+
+
+}
+/* 
+
+/* Menú de navegación */
+
+/* 
+.sidebar {
+    background-color: #ADD8E6;
+    color: #0C0C89;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    position: static;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-links {
+    position: sticky;
+    top: 10px;
+    padding-top: 10px;
+}
+
+.servicios {
+    background-color: #83E2E2;
+    font-weight: bold;
+    border: 1px solid #000000;
+    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    }
+    /* border-radius: Redondea la esquina elegida del borde */
+
+
+.sidebar ul {
+    list-style-type: none;
+    /* list-style-type: Define el tipo de marcador para los elementos de la lista */
+    /* none: Elimina los marcadores de la lista */
+}
+
+.sidebar ul li a:link {
+    color: #0C0C89;
+    /* Color para enlaces no visitados */
+    text-decoration: none;
+
+}
+
+.sidebar ul li a:visited {
+    color: #0C0C89;
+    /* Color para enlaces visitados */
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff;
+    /* Color al pasar el ratón por encima */
+
+}
+
+.sidebar ul li a:active {
+    color: #ffffff;
+    /* Color al hacer clic */
+}
+
+.sidebar img {
+    width: 50px;
+    /* Mantener medida fija en píxeles */
+    height: 50px;
+    transition: transform 0.3s ease;
+    /* Transición suave */
+    border: none;
+    /* Elimina el borde de las imágenes */
+
+}
+*/
+
+/* 
+/* Clase .home (solo aplicable a las subpaginas, ver si lo dejas por estetica en la principal */
+.home {
+    background-color: #ADD8E6;
+    /* Color de fondo */
+    color: #0C0C89;
+    /* Color del texto */
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+    /* Borde negro */
+    padding: 10px;
+}
+
+
+
+
+/* Contenedor principal*/
+
+h4 {
+    color: #83E2E2;
+    /* Color del texto */
+    margin-bottom: 20px;
+    font-size: 28px;
+    -webkit-text-stroke: 1px #0C0C89;
+    /* Contorno del texto  */
+}
+
+section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+section h5 {
+    font-size: 16px;
+}
+
+section h6 {
+    font-size: 20px;
+}
+
+/* Cita */
+.cita {
+    margin: 0 0 10px 50px;
+    /* Ajustar margen para añadir espacio vertical */
+    padding: 10px;
+    font-style: italic;
+    text-align: right;
+    color: rgb(131, 226, 226);
+    border-left: 4px solid rgb(131, 226, 226);
+    border-right: 4px solid rgb(131, 226, 226);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el ID leonardo */
+#leonardo {
+    font-weight: bold;
+    color: #FFFFFF;
+    /* Color del texto */
+}
+
+
+.contenedor-grid img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.contenedor-grid p {
+    font-size: 18px;
+}
+
+.contenedor-grid{
+    display: grid;
+    /*Cantidad y tamaño*/
+    grid-template-columns: 30% 30% 30%; 
+    grid-template-rows: 80px 100px repeat(2,250px);
+    padding-top: 50px;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "foto1 texto1 texto1"
+    "foto1 foto2 foto2"
+    "texto2 foto3 texto3";
+    /* acomoda la grilla */
+    justify-content: center;
+    /* acomoda a los hijos */
+    align-items: center; /*vertical*/
+    justify-items: center;/*horizontal*/
+}
+
+.grid-titulo-1{
+    grid-area: titulo;
+    
+}
+.grid-img-1{
+    grid-area: foto1;
+    justify-self: left;
+    align-self:self-start;
+}
+.grid-texto-1{
+    grid-area: texto1;
+}
+.grid-img-3 { 
+    grid-area: foto2; 
+    justify-self: right;
+}
+.grid-texto-2 { 
+    grid-area: texto2; 
+}
+
+.grid-img-2 { 
+    grid-area: foto3; 
+    align-self: self-end;
+}
+.grid-texto-3 { 
+    grid-area: texto3; 
+}
+
+/* Mapa  capaz cambiar mapa entero para unaparte de contacto y aa dejar solo un link*/
+.map {
+    text-align: center;
+    color: #FFFFFF;
+    /* Color del texto */
+    margin-bottom: 20px;
+}
+
+/* iframe {
+    width: auto;
+    border: 0;
+} */
+
+
+.whatsapp-btn {
+    color: rgb(255, 255, 255);
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+
+
+/* 
+.redes {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ADD8E6;
+    /* Color de fondo 
+    color: #0C0C89;
+    justify-content: space-between;
+    }
+
+.redes img {
+    width: 50px;
+    Mantener medida fija en píxeles
+    height: 50px;
+    border-radius: 50%;
+    margin: 1px 15px;
+    transition: transform 0.3s ease;
+    Transición suave
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.redes-img .icono {
+    width: 30px;
+    height: 30px;
+    margin: 5px 15px;
+    transition: transform 0.3s ease;
+    Transición suave
+    filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%);}
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    /Cambia el color a blanco
+
+.redes img:hover {
+    transform: scale(1.2);
+    Aumentar tamaño al pasar el mouse
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icono-red {
+    width: 50px;
+    height: 50px;
+}
+
+.icono {
+    width: 100%;
+    height: 100%;
+}
+*/ 
+
+.copyright p {
+    text-align: right;
+    font-style: italic;
+    background-color: #ADD8E6;
+    /* Color de fondo */
+    color: #0C0C89;
+    /* Color del texto */
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+
+.scrollup img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 8%;
+    filter: invert(100%);
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    border-radius: 50%;
+    /* Animación de respiración */
+}   
+/* CONTACTO */
+
+
+
+/* Estilo general para el formulario */
+form.contacto {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ADD8E6;
+    /* Color de fondo */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form.contacto div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form.contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+form.contacto input,
+form.contacto textarea {
+    width: 100%;
+    /* Hace que los campos ocupen el 100% del ancho disponible */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Asegura que el padding no sume al tamaño total */
+}
+
+/* Asegura que el botón también tenga el mismo ancho que los campos */
+form.contacto button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form.contacto button:hover {
+    background-color: #004a99;
+}

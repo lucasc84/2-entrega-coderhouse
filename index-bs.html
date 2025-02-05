@@ -1,0 +1,256 @@
+<!-- DECLARACION HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- METADATOS -->
+
+<head>
+    <!-- El head contiene metadatos, enlaces a hojas de estilo, scripts y el título de la página -->
+    <meta charset="UTF-8">
+    <!-- El atributo charset especifica la codificación de caracteres para el documento HTML -->
+    <!-- UTF-8 es una codificación de caracteres Unicode que puede representar cualquier carácter en Unicode. Es compatible con todos los navegadores y sistemas operativos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la linea de viewport hace que una página web sea responsiva en dispositivos móviles. Ajusta el ancho de la ventana gráfica al ancho del dispositivo y establece el nivel de zoom inicial a 1.0, lo que generalmente proporciona una buena experiencia de usuario en dispositivos móviles -->
+
+    <title>Poseidón - Escuela de Natación en La Plata</title>
+    <!-- Titulo a Mostar en la barra de pestañas del Navegador Web -->
+
+
+    <!-- El atributo rel especifica la relación entre el documento actual y el recurso vinculado -->
+    <!-- El atributo href especifica la URL de la página a la que se vincula el recurso -->
+
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css>" rel="stylesheet"> -->
+
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Hoja de estilos CSS -->
+
+    <link rel="icon" href="img/logo.png">
+    <!-- Icono de la pestaña del navegador -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexión a Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Fuente de Google Fonts -->
+
+</head>
+
+
+<!-- CUERPO DE LA PAGINA -->
+
+<body>
+    <!-- El body contiene el contenido visible de la página web -->
+
+    <!-- Encabezado -->
+    <header>
+        <!-- El header contiene el encabezado de la página, como el título y el logo -->
+
+        <div class="banner-top">
+            <div class="contact-info">
+                <a href="tel:+548221444555" target="_blank"><img src="img/tel.svg" alt="Teléfono"></a>
+                <a href="tel:+548221444555">+54 8 221 444555</a>
+                <a href="mailto:poseidon-escuela@gmail.com" target="_blank"><img src="img/mail.svg" alt="Correo"></a>
+                <a href="mailto:poseidon-escuela@gmail.com">poseidon-escuela@gmail.com</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://maps.app.goo.gl/DE5UtiToZ72RbC4j8" target="_blank"><img src="img/map.svg" alt="Ubicación"></a>
+                <a href="http://www.facebook.com/poseidonok" target="_blank"><img src="img/f.svg" alt="Facebook"></a>
+                <a href="http://www.instagram.com/poseok" target="_blank"><img src="img/i.svg" alt="Instagram"></a>
+                <a href="http://www.x.com/poseidon_ok" target="_blank"><img src="img/x.svg" alt="X"></a>
+            </div>
+        </div>
+        <!-- banner de contacto -->
+
+        <!-- Título y logo -->
+        <div class="titulo-logo">
+            <div class="titulo">
+                <h1>Poseidón</h1>
+                <h2>Escuela de Natación Integral</h2>
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo de Poseidón">
+            </div>
+        </div>
+
+    </header>
+    <section class="contenido">
+        <!-- div que incluye a main y footer -->
+
+        <aside class="sidebar">
+            <h3 class="servicios">Servicios</h3>
+            <ul class="sidebar-links">
+                <li><a href="pages/aquagym.html" title="Información sobre Aquagym">Aquagym</a></li>
+                <li><a href="pages/bebes.html" title="Clases para bebés">Bebés</a></li>
+                <li><a href="pages/ninos.html" title="Clases para niños">Niños</a></li>
+                <li><a href="pages/adultos.html" title="Clases para adultos">Adultos</a></li>
+                <li><a href="pages/fisioterapia.html" title="Sesiones de fisioterapia">Fisioterapia</a></li>
+                <li><a href="pages/nosotros.html" title="Quienes Somos">Nosotros</a></li>
+                <li><a href="pages/contacto.html" title="Contactanos">Contacto</a></li>
+                <li><a href="#"><img class="home" src="img/home.svg" alt="Inicio"></a></li>
+            </ul>
+        </aside>
+        <!-- Menú de navegación -->
+
+        <div class="main-footer">
+        <!-- MAIN-FOOTER - div para poder dividir por flex solo main y footer y que quede la barra de servicios al costado -->
+
+
+
+        <!-- MAIN - CONTENIDO PRINCIPAL -->
+        <main>
+            <!-- El elemento <main> define el contenido principal de la página -->
+            <div class="principal">
+                <!-- Título de la sección -->
+                <h4>¡Vení a nadar con nosotros!</h4>
+                <!-- Imagen principal -->
+                <div class="main.img">
+                    <img src="img/main.png" alt="Piscina principal de Poseidón" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <p>
+                ¡Bienvenido a Poseidón!
+                <br>
+                Sumergite en un mundo de bienestar, diversión y aprendizaje en el agua. Nuestro objetivo es
+                brindar
+                <span style="font-weight: bold;">una experiencia única para cada etapa de la vida</span>.
+                <br>
+                Contamos con los mejores profesores para una gama amplia de disciplinas, que van desde el nado
+                para
+                niños,
+                natación adulta independiente o con profesor, aquagym ¡y más!
+            </p>
+            <!-- Cita -->
+            <article class="cita">
+                <h5>“El agua es la fuerza motriz de toda la naturaleza”</h3>
+                    <p id="leonardo">- Leonardo Da Vinci</p>
+            </article>
+            <!-- Mapa
+                    <div class="map">
+                        <h6>Estamos en calle 60 esq. 11 de la Ciudad de La Plata</h3>
+                            <iframe width="400" height="300" frameborder="0" scrolling="no" marginheight="0"
+                                marginwidth="0"
+                                src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=es&amp;q=14%20781%20la%20plata+(%C2%BFDonde%20estamos?)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                title="Mapa de la ubicación de Poseidón">
+                            </iframe>
+                    </div> -->
+
+
+
+        </main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="grid-titulo-1">¿Por qué elegirnos?</h4>
+            </div>
+            <div class="row align-items-center  g-3">
+                <div class="col-md-4">
+                    <img src="img/grilla1.jpg" alt="Experiencia" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <p class="grid-texto-1">
+                        <span style="font-weight: bold;">Más de cuatro décadas de experiencia en la enseñanza de natación:</span>
+                        Desde 1975, nos hemos dedicado a formar nadadores de todas las edades y niveles, promoviendo la seguridad en el agua y el amor por este deporte. Nuestra trayectoria nos respalda como una de las instituciones más reconocidas y confiables en la enseñanza de natación.
+                    </p>
+                    <img src="img/grilla3.jpg" alt="Instructores" class="img-fluid">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="grid-texto-2">
+                        <span style="font-weight: bold;">Instructores altamente calificados:</span>
+                        Nuestro equipo de instructores está compuesto por profesionales con amplia experiencia y certificaciones en la enseñanza de natación. Nos aseguramos de que cada instructor esté capacitado para brindar una enseñanza segura y efectiva.
+                    </p>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <img src="img/grilla2.jpg" alt="Instalaciones" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <p class="grid-texto-3">
+                        <span style="font-weight: bold;">Instalaciones de primer nivel:</span>
+                        Contamos con instalaciones modernas y bien equipadas que proporcionan un ambiente seguro y cómodo para nuestros alumnos. Nuestras piscinas están diseñadas para satisfacer las necesidades de nadadores de todas las edades y niveles.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Pie de página -->
+        <footer>
+            <!-- Copyright -->
+
+            <div class="copyright">
+                <p>Copyright 2025. Poseidon S.A. - Todos los derechos reservados.
+                </p>
+            </div>
+
+            <div class="scrollup">
+                <a href="#"><img src="img/up.svg" alt="Arriba"></a>
+            </div>
+        </footer>
+    </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script class="scroll-hide">
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".scrollup").style.display = "block";
+            } else {
+                document.querySelector(".scrollup").style.display = "none";
+            }
+        }
+
+        // Cuando el usuario hace clic en el botón, desplázate hacia arriba de la página
+        document.querySelector(".scrollup").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        });
+    </script>
+    <!-- Script para que cuando el usuario se desplaza hacia abajo 20px desde la parte superior del documento, muestra el botón -->
+
+
+    <script class="wa" type="text/javascript">
+        window.onload = function () {
+            (function (d, script) {
+                script = d.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = 'js/wa.js';
+                d.getElementsByTagName('head')[0].appendChild(script);
+            }(document));
+        };
+    </script>
+    <!-- Script para mostrar botón de Whatsapp -->
+
+
+
+
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="<https://code.jquery.com/jquery-3.5.1.slim.min.js>"></script>
+    <script src="<https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js>"></script>
+    <script src="<https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js>"></script>
+
+</body>
+
+</html>
