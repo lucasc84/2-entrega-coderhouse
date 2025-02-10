@@ -161,14 +161,28 @@ main {
 
 /* Encabezado */
 
+
+
+
+
+
 .navbar {
     background-color: #ADD8E6; /* Mismo color de fondo que banner-top */
 }
 
-.navbar-brand {
+.navbar-titulo {
+    display: flex;
     color: #0C0C89  !important; /* Color de los enlaces */
     text-decoration: none; /* Asegúrate de que no haya subrayado */
+    background-color: #83E2E2;
     font-weight: bold;
+    border: 1px solid #0C0C89;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* border-radius: Redondea la esquina elegida del borde */
 }
 
 .navbar-nav .nav-link {
@@ -179,84 +193,130 @@ main {
 .navbar-nav .nav-link:hover {
     color: #ffffff  !important; /* Color de los enlaces al pasar el ratón por encima */
     text-decoration: none; /* Asegúrate de que no haya subrayado */
-
-
 }
-/* 
 
-/* Menú de navegación */
 
-/* 
-.sidebar {
-    background-color: #ADD8E6;
-    color: #0C0C89;
+.navbar-fixed img.navbar-logo {
+    display: none;
+}
+
+.navbar-fixed.scrolled img.navbar-logo {
+    display: block !important;
+    height: 3em; /* Permite que la imagen se ajuste automáticamente */
+    max-height: 100% !important; /* Asegura que la imagen no exceda la altura del contenedor */
+    padding-left: 20px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+
+    /* width: auto !important; Mantiene la proporción de la imagen */ 
+}
+
+.navbar-fixed.scrolled .navbar-titulo {
+    display: none;
+}
+
+.navbar-fixed p {
+    display: none;
+}
+
+
+.navbar-fixed.scrolled p {
+    display: block !important;
+    color: #0C0C89  !important; /* Color de los enlaces */
     font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    position: static;
-    flex: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding-left: 20px;
 }
 
-.sidebar-links {
-    position: sticky;
-    top: 10px;
-    padding-top: 10px;
+.navbar-fixed p.navbar-text {
+    margin-bottom: 0; /* Asegura que el texto esté alineado verticalmente */
 }
 
-.servicios {
-    background-color: #83E2E2;
-    font-weight: bold;
-    border: 1px solid #000000;
-    padding: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+
+
+
+
+
+/* media queries
+/* mobile  hasta 500px */
+
+
+
+
+
+
+@media (max-width:500px) {
+
+    header  {
+        flex-direction: column;
+        align-items: center;
     }
-    /* border-radius: Redondea la esquina elegida del borde */
 
+    
+    .contact-info-text  {
+        display: none;
+    }
 
-.sidebar ul {
-    list-style-type: none;
-    /* list-style-type: Define el tipo de marcador para los elementos de la lista */
-    /* none: Elimina los marcadores de la lista */
+    header img{
+        width:fit-content;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+
+    .navbar-titulo-movil {
+        color: #0C0C89  !important; /* Color de los enlaces */
+        text-decoration: none; /* Asegúrate de que no haya subrayado */
+        background-color: #83E2E2;
+        font-weight: bold;
+        border: 1px solid #0C0C89;
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        /* Ajustar tamaño de fuente */
+    }
+
+    h2 {
+        font-size: 18px;
+        /* Ajustar tamaño de fuente */
+    }
+    
+    .titulo-logo img[src*="logo.png"] {
+        width: 90px;
+        /* Reducir el tamaño de la imagen */
+        height: auto;
+        /* Mantener la proporción de la imagen */
+        margin-left: auto;
+        /* Mantener la imagen a la derecha */
+        display: block;
+        /* Asegurar que la imagen se comporte como un bloque */
+    }
+    
+
+    .contenedor-grid {
+        grid-template-columns:min-content;
+        grid-template-rows:min-content;
+        grid-template-areas:
+        "grid-titulo-1"
+        "grid-texto-1"
+        "grid-texto-2"
+        "grid-texto-3"
+        "grid-img-1"
+        "grid-img-2"
+        "grid-img-3";
+    }
 }
 
-.sidebar ul li a:link {
-    color: #0C0C89;
-    /* Color para enlaces no visitados */
-    text-decoration: none;
-
-}
-
-.sidebar ul li a:visited {
-    color: #0C0C89;
-    /* Color para enlaces visitados */
-}
-
-.sidebar ul li a:hover {
-    color: #ffffff;
-    /* Color al pasar el ratón por encima */
-
-}
-
-.sidebar ul li a:active {
-    color: #ffffff;
-    /* Color al hacer clic */
-}
-
-.sidebar img {
-    width: 50px;
-    /* Mantener medida fija en píxeles */
-    height: 50px;
-    transition: transform 0.3s ease;
-    /* Transición suave */
-    border: none;
-    /* Elimina el borde de las imágenes */
-
-}
-*/
+    /* .contenedor-grid p{
+        margin: 0px 10px;
+    } */
+/* } */ */
 
 /* 
 /* Clase .home (solo aplicable a las subpaginas, ver si lo dejas por estetica en la principal */
