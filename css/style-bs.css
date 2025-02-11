@@ -35,22 +35,21 @@
 .contact-info {
     display: flex;
     align-items: center;
-    margin-left: 15px;
 
 }
 
 .contact-info img {
     width: 20px;
     height: 20px;
-    margin-left: 15px;
     filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%); 
+    margin-right: 5px;
 
 }
 
 .contact-info a {
     color: #0C0C89; /* Ajustar color del texto de los enlaces a verde y usar !important para asegurar el cambio */
     text-decoration: none; /* Eliminar subrayado de los enlaces */
-    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .contact-info a:hover,
@@ -168,7 +167,10 @@ main {
 
 .navbar {
     background-color: #ADD8E6; /* Mismo color de fondo que banner-top */
+    padding: 1px;
+
 }
+
 
 .navbar-titulo {
     display: flex;
@@ -177,7 +179,7 @@ main {
     background-color: #83E2E2;
     font-weight: bold;
     border: 1px solid #0C0C89;
-    padding: 5px;
+    padding: 3px;
     padding-right: 10px;
     padding-left: 10px;
     border-top-right-radius: 15px;
@@ -225,10 +227,13 @@ main {
     font-weight: bold;
     font-size: 20px;
     padding-left: 20px;
+    padding: 1px;
+    
 }
 
 .navbar-fixed p.navbar-text {
     margin-bottom: 0; /* Asegura que el texto esté alineado verticalmente */
+    
 }
 
 
@@ -242,7 +247,17 @@ main {
 
 
 
-
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @media (max-width:500px) {
 
@@ -269,14 +284,23 @@ main {
         text-decoration: none; /* Asegúrate de que no haya subrayado */
         background-color: #83E2E2;
         font-weight: bold;
+        font-size: 16px;
         border: 1px solid #0C0C89;
-        padding: 5px;
+        padding: 1px;
         padding-right: 10px;
         padding-left: 10px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
+        animation: blink 2s infinite; /* Aplica la animación */
+
     }
 
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none; /* Elimina el contorno predeterminado */
+    }
+    
     h1 {
         font-size: 24px;
         /* Ajustar tamaño de fuente */
@@ -286,18 +310,26 @@ main {
         font-size: 18px;
         /* Ajustar tamaño de fuente */
     }
+
+    .titulo-logo {
+    padding: 10px;
+    }
     
     .titulo-logo img[src*="logo.png"] {
-        width: 90px;
+        width: 120px;
         /* Reducir el tamaño de la imagen */
         height: auto;
         /* Mantener la proporción de la imagen */
-        margin-left: auto;
         /* Mantener la imagen a la derecha */
         display: block;
         /* Asegurar que la imagen se comporte como un bloque */
     }
     
+    .navbar-fixed.scrolled img.navbar-logo {
+        margin-left: auto; /* Mueve los elementos a la derecha */
+           }
+
+
 
     .contenedor-grid {
         grid-template-columns:min-content;
