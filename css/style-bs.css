@@ -259,7 +259,10 @@ main {
     }
 }
 
-@media (max-width:500px) {
+/* MEDIA QUERIES */
+/* TELEFONO */
+
+@media (max-width:767px) {
 
     header  {
         flex-direction: column;
