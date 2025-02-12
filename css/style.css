@@ -128,8 +128,9 @@ body {
     /* Asegúrate de que no haya subrayado */
 }
 
-/* navbar - en pantalla */
-
+#navbarNav ul {
+    align-items: center;
+}
 
 
 .navbar-fixed img.navbar-logo {
@@ -171,6 +172,15 @@ body {
     color: #0C0C89;
 }
 
+.navbar-collapse {
+    width: auto;
+    /* Ajusta el ancho automáticamente según el contenido */
+    max-width: 80%;
+    /* Opcional: establece un ancho máximo */
+    margin: 0 auto;
+    /* Centra el menú horizontalmente */
+}
+
 /* MAIN - Contenido principal de la página */
 
 
@@ -202,7 +212,8 @@ h4 {
 .cita {
     margin: 0 0 10px 50px;
     /* Ajustar margen para añadir espacio vertical */
-    padding: 3px 25px; /* Aumentar el padding para añadir más espacio */
+    padding: 3px 25px;
+    /* Aumentar el padding para añadir más espacio */
     font-style: italic;
     text-align: right;
     color: rgb(131, 226, 226);
@@ -219,7 +230,8 @@ h4 {
     text-align: right;
     font-weight: bold;
     color: #FFFFFF;
-    margin-bottom: 2px; /* Ajusta el margen inferior */
+    margin-bottom: 2px;
+    /* Ajusta el margen inferior */
 }
 
 /* CONTENEDOR GRID*/
@@ -227,23 +239,23 @@ h4 {
 
 .contenedor-grid {
 
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 80px 100px repeat(2, 250px);
-        padding-top: 50px;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "foto1 texto1 texto1"
-            "foto1 foto2 foto2"
-            "texto2 foto3 texto3";
-        /* acomoda la grilla */
-        justify-content: center;
-        /* acomoda a los hijos */
-        align-items: center;
-        /*vertical*/
-        justify-items: center;
-        /*horizontal*/
-    }
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 80px 100px repeat(2, 250px);
+    padding-top: 50px;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "foto1 texto1 texto1"
+        "foto1 foto2 foto2"
+        "texto2 foto3 texto3";
+    /* acomoda la grilla */
+    justify-content: center;
+    /* acomoda a los hijos */
+    align-items: center;
+    /*vertical*/
+    justify-items: center;
+    /*horizontal*/
+}
 
 
 .contenedor-grid img {
@@ -289,7 +301,7 @@ h4 {
 }
 
 
-    /* FOOTER */
+/* FOOTER */
 
 
 
@@ -425,100 +437,92 @@ form.contacto button:hover {
 
 
 /* MEDIA QUERIES */
-/* TELEFONO (hasta 500px)*/
+/* TELEFONO (hasta 500px) CAMBIARRR ESTA EN 700para probar en pc*/
 /* TABLET (hasta 1000px) solo para el TP final*/
 
-
-@media (max-width:500px) {
-
-    header {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 500px) {
+    .navbar-logo.scrolled {
+        display: none !important;
     }
+}
 
+@media (max-width:992px) {
 
     .contact-info-text {
         display: none;
     }
 
-    header img {
-        width: fit-content;
+        h1 {
+            font-size: 22px;
+            /* Ajustar tamaño de fuente */
+        }
+
+        h2 {
+            font-size: 16px;
+            /* Ajustar tamaño de fuente */
+        }
+
+        .titulo-logo {
+            padding: 10px;
+        }
+
+        .titulo-logo img[src*="logo.png"] {
+            width: 120px;
+            /* Reducir el tamaño de la imagen */
+            height: auto;
+            /* Mantener la proporción de la imagen */
+            /* Mantener la imagen a la derecha */
+            /* display: block; */
+            /* Asegurar que la imagen se comporte como un bloque */
+        }
+
+        .navbar-titulo {
+            display: none;
+        }
+
+        .navbar-titulo-movil {
+            color: #0C0C89 !important;
+            /* Color de los enlaces */
+            text-decoration: none;
+            /* Asegúrate de que no haya subrayado */
+            background-color: #83E2E2;
+            font-weight: bold;
+            font-size: 16px;
+            border: 1px solid #0C0C89;
+            padding: 1px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 15px;
+            animation: blink 2s infinite;
+            /* Aplica la animación */
+        }
+
+        .navbar-text.scrolled {
+            padding: 1px !important;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active {
+            outline: none;
+            /* Elimina el contorno predeterminado */
+        }
+
+
     }
 
-    .navbar-titulo {
-        display: none;
-    }
-
-    .navbar-titulo-movil {
-        color: #0C0C89 !important;
-        /* Color de los enlaces */
-        text-decoration: none;
-        /* Asegúrate de que no haya subrayado */
-        background-color: #83E2E2;
-        font-weight: bold;
-        font-size: 16px;
-        border: 1px solid #0C0C89;
-        padding: 1px;
-        padding-right: 10px;
-        padding-left: 10px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        animation: blink 2s infinite;
-        /* Aplica la animación */
-
-    }
-
-
-    .navbar-toggler:focus,
-    .navbar-toggler:active {
-        outline: none;
-        /* Elimina el contorno predeterminado */
-    }
-
-    h1 {
-        font-size: 24px;
-        /* Ajustar tamaño de fuente */
-    }
-
-    h2 {
-        font-size: 18px;
-        /* Ajustar tamaño de fuente */
-    }
-
-    .titulo-logo {
-        padding: 10px;
-    }
-
-    .titulo-logo img[src*="logo.png"] {
-        width: 120px;
-        /* Reducir el tamaño de la imagen */
-        height: auto;
-        /* Mantener la proporción de la imagen */
-        /* Mantener la imagen a la derecha */
-        display: block;
-        /* Asegurar que la imagen se comporte como un bloque */
-    }
-
-    .navbar-fixed.scrolled img.navbar-logo {
-        margin-left: auto;
-        /* Mueve los elementos a la derecha */
-    }
-
-
-/* KEYFRAMES (ANIMACIONES */
+    /* KEYFRAMES (ANIMACIONES */
 
 
     @keyframes blink {
         0% {
             opacity: 1;
         }
-    
+
         50% {
             opacity: 0.5;
         }
-    
+
         100% {
             opacity: 1;
         }
     }
-}
