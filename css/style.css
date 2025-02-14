@@ -428,9 +428,21 @@ form.contacto button:hover {
     background-color: #004a99;
 }
 
+.cards {
+    color: #83E2E2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.cards img {
+    width: 20px;
+    height: 20px;
+    filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%);
+    margin-right: 15px;
+    margin-left: 15px;
 
-
+}
 
 
 
