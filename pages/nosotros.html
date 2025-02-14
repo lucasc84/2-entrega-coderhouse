@@ -1,117 +1,247 @@
+<!-- DECLARACION HTML5 -->
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poseidón - Escuela de Natación</title>
-    <!-- Hoja de estilos CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+<!-- METADATOS -->
 
-    <!-- Fuentes de Google -->
+<head>
+    <!-- El head contiene metadatos, enlaces a hojas de estilo, scripts y el título de la página -->
+    <meta charset="UTF-8">
+    <!-- El atributo charset especifica la codificación de caracteres para el documento HTML -->
+    <!-- UTF-8 es una codificación de caracteres Unicode que puede representar cualquier carácter en Unicode. Es compatible con todos los navegadores y sistemas operativos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la linea de viewport hace que una página web sea responsiva en dispositivos móviles. Ajusta el ancho de la ventana gráfica al ancho del dispositivo y establece el nivel de zoom inicial a 1.0, lo que generalmente proporciona una buena experiencia de usuario en dispositivos móviles -->
+
+    <title>Poseidón - Escuela de Natación en La Plata</title>
+    <!-- Titulo a Mostar en la barra de pestañas del Navegador Web -->
+
+
+
+    <!-- ESTILOS -->
+    <!-- El atributo href especifica la URL de la página a la que se vincula el recurso -->
+    <!-- El atributo rel especifica la relación entre el documento actual y el recurso vinculado -->
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Hoja de estilos CSS -->
+
+    <link rel="icon" href="../img/logo.png">
+    <!-- Icono de la pestaña del navegador -->
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexión a Google Fonts -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <script type="text/javascript">
-        window.onload = function(){
-        (function(d, script) {
-        script = d.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = 'https://w.app/widget-v1/qSRevu.js';
-        d.getElementsByTagName('head')[0].appendChild(script);
-        }(document));
-        };
-    </script>
+    <!-- Fuente de Google Fonts -->
+
 </head>
 
+
+<!-- CUERPO DE LA PAGINA -->
+
 <body>
+    <!-- El body contiene el contenido visible de la página web -->
+
+    <!-- Encabezado -->
     <header>
-        <!-- Título y logo -->
+        <!-- El header contiene el encabezado de la página, como el título y el logo -->
+
+
+        <!-- Banner de Encabezado - Contacto y Redes -->
+
+        <div class="banner-top">
+            <div class="contact-info">
+                <a href="tel:+548221444555"><img src="../img/tel.svg" alt="Teléfono"></a>
+                <a class="contact-info-text" href="tel:+548221444555">+54 8 221 444555</a>
+                <a href="mailto:poseidon-escuela@gmail.com"><img src="../img/mail.svg" alt="Correo"></a>
+                <a class="contact-info-text" href="mailto:poseidon-escuela@gmail.com">poseidon-escuela@gmail.com</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://maps.app.goo.gl/DE5UtiToZ72RbC4j8" target="_blank"><img src="../img/map.svg"
+                        alt="Ubicación"></a>
+                <a href="http://www.facebook.com/poseidonok" target="_blank"><img src="../img/f.svg" alt="Facebook"></a>
+                <a href="http://www.instagram.com/poseok" target="_blank"><img src="../img/i.svg" alt="Instagram"></a>
+                <a href="http://www.x.com/poseidon_ok" target="_blank"><img src="../img/x.svg" alt="X"></a>
+            </div>
+        </div>
+
+        <!-- Banner Principal - Título y logo -->
         <div class="titulo-logo">
             <div class="titulo">
                 <h1>Poseidón</h1>
                 <h2>Escuela de Natación Integral</h2>
             </div>
             <div class="logo">
-                <img src="../img/logo.png" alt="Logo de Poseidón" width="100" height="100">
+                <img src="../img/logo.png" alt="Logo de Poseidón">
             </div>
         </div>
-        <!-- Menú de navegación -->
-        <nav class="menu" aria-label="Menú principal de servicios">
-            <h3 class="servicios">Servicios</h3>
-            <ul>
-                <li><a href="aquagym.html" title="Información sobre Aquagym">Aquagym</a></li>
-                <li><a href="bebes.html" title="Clases para bebés">Bebés</a></li>
-                <li><a href="ninos.html" title="Clases para niños">Niños</a></li>
-                <li><a href="adultos.html" title="Clases para adultos">Adultos</a></li>
-                <li><a href="fisioterapia.html" title="Sesiones de fisioterapia">Fisioterapia</a></li>
-                <li><a href="nosotros.html" title="Quienes Somos">Nosotros</a></li>
-                <li><a href="contacto.html" title="Contactanos">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Enlace para volver al inicio -->
-        <div class="home">
-            <a href="../index.html">Volver al Home</a>
-        </div>
-        <!-- Sección específica de la página -->
-        <section>
-            <h4>SOBRE NOSOTROS</h4>
-            <!-- Imagen principal -->
-            <div class="main">
-                <img src="/img/nosotros.png" alt="Logo Principal" width="100%" height="auto">
-            </div>
 
-            <!-- Descripción -->
-            <div class="main">
-                <h5>Responsables del Gimnasio</h5>
-                <p>En Poseidón, contamos con un equipo de profesionales altamente capacitados y apasionados por la
-                    natación. Nuestro equipo está liderado por:</p>
-                <ul>
-                    <li><strong>Juan Pérez</strong> - Director General</li>
-                    <li><strong>María López</strong> - Coordinadora de Actividades</li>
-                    <li><strong>Carlos García</strong> - Entrenador Principal</li>
+    </header>
+
+    <!-- Menú de navegación (basado en bootstrap)-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-fixed">
+        <div class="container">
+            <a class="navbar-titulo" href="#">SERVICIOS</a>
+            <a href="../index.html"><img class="home" src="../img/home.svg" alt="Inicio"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-titulo-movil">SERVICIOS</span>
+            </button>
+            <img src="../img/logo.png" alt="Logo" class="navbar-logo">
+            <p class="navbar-text">POSEIDÓN</p>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="aquagym.html">Aquagym</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bebes.html">Bebés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ninos.html">Niños</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adultos.html">Adultos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fisioterapia.html">Fisioterapia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    
                 </ul>
             </div>
-            <!-- Video externo -->
-            <div class="main">
-                <h5>MIRÁ</h5>
-                <p>Conoce más sobre nuestra escuela de natación en este video:</p>
-                <a href="https://www.youtube.com/watch?v=BFH8NBHN42g" target="_blank">Ver Video</a>
-            </div>
-            <!-- Archivo de música -->
-            <div class="main">
-                <h5>ESCUCHÁ</h5>
-                <p>Escucha nuestra música motivacional:</p>
-                <audio controls>
-                    <source src="/audio/music.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
-        </section>
+        </div>
+    </nav>
+
+
+
+
+    <!-- MAIN - CONTENIDO PRINCIPAL -->
+    <main>
+        <h3>SOBRE NOSOTROS</h3>
+        <!-- Imagen principal -->
+        <div class="main">
+            <img src="../img/nosotros.png" alt="Logo Principal" width="100%" height="auto">
+        </div>
+
+        <!-- Descripción -->
+        <div class="main-nosotros">
+            <h3>Responsables del Gimnasio</h3>
+            <p>En Poseidón, contamos con un equipo de profesionales altamente capacitados y apasionados por la
+                natación. Nuestro equipo está liderado por:</p>
+            <ul>
+                <li><strong>Juan Pérez</strong> - Director General</li>
+                <li><strong>María López</strong> - Coordinadora de Actividades</li>
+                <li><strong>Carlos García</strong> - Entrenador Principal</li>
+            </ul>
+        </div>
+        <!-- Video externo -->
+        <div class="multimedia">
+        <div class="video">
+            <h4>MIRÁ</h4>
+            <p>Conoce más sobre nuestra escuela de natación en este video:</p>
+            <a href="https://www.youtube.com/watch?v=BFH8NBHN42g" target="_blank">Ver Video</a>
+        </div>
+        <!-- Archivo de música -->
+        <div class="musica">
+            <h4>ESCUCHÁ</h4>
+            <p>Escucha nuestra música motivacional:</p>
+            <audio controls>
+                <source src="../audio/music.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        </div>
     </main>
+
+
+
+
     <!-- Pie de página -->
     <footer>
-        <!-- Redes sociales -->
-
-        <div class="redes">
-            <p>Seguinos en redes! <br>
-                <a href="http://www.facebook.com/poseidonok" target="_blank"><img src="/img/f.png" alt="Facebook"></a>
-                <a href="http://www.instagram.com/poseok" target="_blank"><img src="/img/i.png" alt="Instagram"></a>
-                <a href="http://www.x.com/poseidon_ok" target="_blank"><img src="/img/x.png" alt="X"></a>
-            </p>
-        </div>
         <!-- Copyright -->
 
         <div class="copyright">
-            <p>Copyright 2025. Poseidon S.A. - Todos los derechos reservados.</p>
+            <p>Copyright 2025. Poseidon S.A. - Todos los derechos reservados.
+            </p>
+        </div>
+
+        <!-- Scrollup - Link e Imagen (se relaciona con script abajo) -->
+    
+        <div class="scrollup">
+            <a href="#"><img src="../img/up.svg" alt="Arriba"></a>
         </div>
     </footer>
 
+
+
+    <!-- SCRIPTS -->
+
+
+        <!-- SCRIPT - SCROLLUP FLOTANTE-->
+
+    <script class="scroll-hide">
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".scrollup").style.display = "block";
+            } else {
+                document.querySelector(".scrollup").style.display = "none";
+            }
+        }
+        // Cuando el usuario hace clic en el botón, nos va a llevar hacia arriba de la página
+        document.querySelector(".scrollup").addEventListener("click", function (event) {
+            event.preventDefault();
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        });
+    </script>
+    <!-- Script para que cuando el usuario se desplaza hacia abajo 20px desde la parte superior del documento, muestre el botón -->
+
+    <!-- SCRIPT - WHATSAPP FLOTANTE -->
+
+    <script class="wa" type="text/javascript">
+        window.onload = function () {
+            (function (d, script) {
+                script = d.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = '../js/wa.js';
+                d.getElementsByTagName('head')[0].appendChild(script);
+            }(document));
+        };
+    </script>
+    <script src="../js/wa.js"></script>
+
+    <!-- SCRIPT - navbar se transforma al scrolear -->
+
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbarTitulo = document.querySelector('.navbar-titulo');
+        const navbarLogo = document.querySelector('.navbar-logo');
+        const navbarText = document.querySelector('.navbar-text');
+        
+        if (window.scrollY > 200) { // Puedes ajustar el valor según tus necesidades
+            navbarTitulo.classList.add('scrolled');
+            navbarLogo.classList.add('scrolled');
+            navbarText.classList.add('scrolled');
+        } else {
+            navbarTitulo.classList.remove('scrolled');
+            navbarLogo.classList.remove('scrolled');
+            navbarText.classList.remove('scrolled');
+        }
+    });
+</script>
+
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

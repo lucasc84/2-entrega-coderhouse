@@ -89,7 +89,6 @@ body {
 /* Menú de navegación (basado en bootstrap) */
 
 
-
 .navbar {
     background-color: #ADD8E6;
     /* Mismo color de fondo que banner-top */
@@ -186,6 +185,7 @@ body {
 h3 {
     color: #83E2E2;
     /* Color del texto */
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 28px;
     -webkit-text-stroke: 1px #0C0C89;
@@ -199,7 +199,7 @@ p {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Cita */
@@ -356,17 +356,19 @@ h4 {
 
 
 .home {
-    background-color: #ADD8E6;
-    /* Color de fondo */
-    color: #0C0C89;
-    /* Color del texto */
-    font-weight: 700;
-    margin-bottom: 20px;
-    border: 2px solid #000000;
-    /* Borde negro */
-    padding: 10px;
+    height: 30px;
+    margin-left: 20px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
 }
 
+/* PAGINA NOSOTROS */
+.multimedia {
+    text-align: right;
+}
+
+.multimedia p {
+    text-align: right;
+}
 
 
 /* PAGINA DE CONTACTO */
@@ -568,6 +570,19 @@ form.contacto button:hover {
     grid-area: texto3;
 }
 
+    /* PAGINA NOSOTROS */
+
+    .main-nosotros,
+    .main-nosotros p  {
+        text-align: center;
+    }
+
+
+
+    .multimedia,
+    .multimedia p {
+        text-align: center;
+    }
 
 
 
