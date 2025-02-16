@@ -358,6 +358,30 @@ h4 {
     text-align: right;
 }
 
+.carousel-caption h5 img {
+    width: 30px;  /* Ajustá el tamaño a tu gusto */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 5px; /* Agrega un pequeño espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea la imagen con el texto */
+}
+
+.carousel-inner img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    }
+
+    .carousel-caption {
+    max-width: 480px; /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
+    width: 100%;
+    margin: 0 auto; /* Centra el contenedor del texto horizontalmente */
+    padding: 10px; /* Espacio interno del contenedor del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+}
 
 /* PAGINA DE CONTACTO */
 
@@ -508,6 +532,9 @@ form.contacto button:hover {
 
     .navbar-text.scrolled {
         padding: 1px !important;
+        font-size: 20px;
+
+
     }
 
     .navbar-toggler:focus,
@@ -584,19 +611,128 @@ form.contacto button:hover {
         grid-area: texto3;
     }
 
+    .copyright p {
+        font-size: 12px;
+        text-align: center;
+
+    }
+
+    /* PAGINA CONTACTO */
+
+
+
+    
+    form.contacto label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: #000000;
+        text-align: center;
+
+    }
+    
+    form.contacto h5 {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+
+
+    }
+    
+    form.contacto button {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+ 
+
+
+    #mapa h5 {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+    
+    .card {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        color: #0C0C89;
+        background-color: #ADD8E6;
+    }
+
+.card p {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+    
+    
+    .btn.btn-primary {
+        background-color: #0C0C89;
+    }
+    
+    .btn.btn-primary:hover {
+        background-color: #004a99;
+    }
+    
+    .card img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+    }
+    
+    
+
     /* PAGINA NOSOTROS */
+
+
+
+    
+        .carousel-caption {
+        max-height: 190px;
+    }
+
+    .carousel-item h5 {
+        font-size: 14px;
+    }
+    .carousel-item p {
+        font-size: 12px;
+    }
+    
+
 
     .main-nosotros,
     .main-nosotros p {
         text-align: center;
     }
 
-
+    .multimedia {
+        margin-top: 20px;
+    }
 
     .multimedia,
     .multimedia p {
         text-align: center;
     }
+
+
+
+
+    .carousel-caption {
+        max-width: 70%; /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
+        width: 100%;
+        margin: 0 auto; /* Centra el contenedor del texto horizontalmente */
+        padding: 10px; /* Espacio interno del contenedor del texto */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+        border-radius: 8px; /* Bordes redondeados */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+    }
+
+    /* PAGINA CONTACTO */
+
+
 
 #mapa {
     width: 90%;
