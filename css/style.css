@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
+
 
 /* Resetea las propiedades de margen y relleno y establece el modelo de caja en border-box. */
 
@@ -338,19 +339,6 @@ h4 {
 }
 
 
-/* Mapa  capaz cambiar mapa entero para unaparte de contacto y aa dejar solo un link*/
-.map {
-    text-align: center;
-    color: #FFFFFF;
-    /* Color del texto */
-    margin-bottom: 20px;
-}
-
-/* iframe {
-    width: auto;
-    border: 0;
-} */
-
 
 /* SUBPAGINAS (solo aplicable a las subpaginas, ver si lo dejas por estetica en la principal */
 
@@ -376,7 +364,9 @@ h4 {
 
 
 /* Estilo general para el formulario */
+
 form.contacto {
+    width: 90%;
     color: #0C0C89;
     margin: 20px auto;
     padding: 20px;
@@ -419,6 +409,8 @@ form.contacto button:hover {
 
 
 #mapa {
+    width: 48%;
+
     color: #0C0C89;
     margin: 20px auto;
     padding: 20px;
@@ -433,7 +425,6 @@ form.contacto button:hover {
     border-radius: 8px;
     color: #0C0C89;
     background-color: #ADD8E6;
-    ç
 }
 
 .btn.btn-primary {
@@ -607,6 +598,11 @@ form.contacto button:hover {
         text-align: center;
     }
 
+#mapa {
+    width: 90%;
+
+}
+
     .card {
         text-align: center;
     }
@@ -633,3 +629,4 @@ form.contacto button:hover {
             opacity: 1;
         }
     }
+}
