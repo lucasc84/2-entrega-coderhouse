@@ -346,7 +346,7 @@ p {
 
 /* B. BOOTSTRAP - Carrousel */
 
-.carousel-caption h5 img {
+.carousel-caption h4 img {
     width: 30px;
     height: auto;
     margin-right: 5px;
@@ -513,9 +513,9 @@ form.contacto button:hover {
     .navbar-text.scrolled {
         padding: 1px !important;
         font-size: 20px;
-
-
     }
+
+    
 
     .navbar-toggler:focus,
     .navbar-toggler:active {
@@ -663,7 +663,7 @@ form.contacto button:hover {
         max-height: 190px;
     }
 
-    .carousel-item h5 {
+    .carousel-item h4 {
         font-size: 14px;
     }
 
