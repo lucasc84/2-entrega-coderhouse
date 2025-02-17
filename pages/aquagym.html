@@ -1,26 +1,32 @@
-<!-- DECLARACION HTML5 -->
+<!-- 1.) DECLARACION HTML5 -->
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- METADATOS -->
+<!-- 2.) HEAD - METADATOS -->
+<!-- El head contiene metadatos, enlaces a hojas de estilo, scripts y el título de la página -->
 
 <head>
-    <!-- El head contiene metadatos, enlaces a hojas de estilo, scripts y el título de la página -->
+
+    <!-- I. Charset -->
+
     <meta charset="UTF-8">
     <!-- El atributo charset especifica la codificación de caracteres para el documento HTML -->
     <!-- UTF-8 es una codificación de caracteres Unicode que puede representar cualquier carácter en Unicode. Es compatible con todos los navegadores y sistemas operativos -->
 
+    <!-- II. Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- la linea de viewport hace que una página web sea responsiva en dispositivos móviles. Ajusta el ancho de la ventana gráfica al ancho del dispositivo y establece el nivel de zoom inicial a 1.0, lo que generalmente proporciona una buena experiencia de usuario en dispositivos móviles -->
 
+    <!-- III. Title y Icon -->
     <title>Poseidón - Escuela de Natación en La Plata</title>
     <!-- Titulo a Mostar en la barra de pestañas del Navegador Web -->
 
+    <link rel="icon" href="img/logo.png">
+    <!-- Icono de la pestaña del navegador -->
 
 
-    <!-- ESTILOS -->
-    <!-- El atributo href especifica la URL de la página a la que se vincula el recurso -->
-    <!-- El atributo rel especifica la relación entre el documento actual y el recurso vinculado -->
+    <!-- IV. Páginas de Estilos -->
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Enlace a la hoja de estilos de Bootstrap -->
@@ -28,9 +34,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Hoja de estilos CSS -->
 
-    <link rel="icon" href="../img/logo.png">
-    <!-- Icono de la pestaña del navegador -->
+    <!-- El atributo href especifica la URL de la página a la que se vincula el recurso -->
+    <!-- El atributo rel especifica la relación entre el documento actual y el recurso vinculado -->
 
+    <!-- V. Uso de fuentes externas -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,22 +46,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <!-- Fuente de Google Fonts -->
+    <!-- Fuentes especificas de Google Fonts -->
 
 </head>
 
 
-<!-- CUERPO DE LA PAGINA -->
+<!-- 3.) BODY - CUERPO DE LA PAGINA -->
+<!-- El body contiene el contenido visible de la página web -->
 
 <body>
-    <!-- El body contiene el contenido visible de la página web -->
+    <!-- I. Encabezado -->
+    <!-- El header contiene el encabezado de la página, como el título y el logo -->
 
-    <!-- Encabezado -->
     <header>
-        <!-- El header contiene el encabezado de la página, como el título y el logo -->
+        <!-- A. Banner de Encabezado (Contacto y Redes) -->
 
-
-        <!-- Banner de Encabezado - Contacto y Redes -->
 
         <div class="banner-top">
             <div class="contact-info">
@@ -72,7 +78,7 @@
             </div>
         </div>
 
-        <!-- Banner Principal - Título y logo -->
+        <!-- B. Banner Principal (Título y logo) -->
         <div class="titulo-logo">
             <div class="titulo">
                 <h1>Poseidón</h1>
@@ -85,18 +91,18 @@
 
     </header>
 
-    <!-- Menú de navegación (basado en bootstrap)-->
-     <!-- Menú de navegación (basado en bootstrap)-->
-     <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-fixed">
+    <!-- II. NAVBAR - Menú de navegación (basado en bootstrap)-->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-fixed">
         <div class="container">
             <a class="navbar-titulo" href="#">SERVICIOS</a>
             <a href="../index.html"><img class="home" src="../img/home.svg" alt="Inicio"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-titulo-movil">SERVICIOS</span>
-        </button>
-        
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-titulo-movil">SERVICIOS</span>
+            </button>
+
             <img src="../img/logo.png" alt="Logo" class="navbar-logo">
             <p class="navbar-text">POSEIDÓN</p>
 
@@ -117,14 +123,19 @@
 
 
 
-    <!-- MAIN - CONTENIDO PRINCIPAL -->
+    <!-- III. MAIN - Contenido principal -->
+    <!-- El elemento <main> define el contenido principal de la página -->
+
     <main>
         <h3>AQUAGYM</h3>
+        <!-- A. Título de la sección -->
+
         <div class="main">
-            <!-- Imagen principal -->
+            <!-- B. Imagen principal de la page -->
             <img src="../img/aquagym.png" alt="Clases de adultos en Poseidón" width="100%" height="auto">
         </div>
 
+        <!--C.  Descripción -->
         <p>Mantenete en forma de manera segura y divertida con nuestras clases de aquagym. Estas sesiones están
             pensadas para todas las edades y niveles de condición física, combinando ejercicios aeróbicos,
             tonificación muscular y relajación. El agua reduce el impacto en las articulaciones, permitiéndote
@@ -135,89 +146,90 @@
 
 
 
-    <!-- Pie de página -->
+    <!-- IV. FOOTER - Pie de Página -->
     <footer>
-        <!-- Copyright -->
+        <!-- A. Copyright -->
 
         <div class="copyright">
             <p>Copyright 2025. Poseidon S.A. - Todos los derechos reservados.
             </p>
         </div>
 
-        <!-- Scrollup - Link e Imagen (se relaciona con script abajo) -->
-    
-        <div class="scrollup">
-            <a href="#"><img src="../img/up.svg" alt="Arriba"></a>
+        <!-- B. Scripts -->
+        <div>
+            <!-- SCRIPT - SCROLLUP FLOTANTE-->
+            <!-- Script para que cuando el usuario se desplaza hacia abajo 20px desde la parte superior del documento, muestre el botón -->
+
+            <!-- Scrollup - Link e Imagen -->
+            <div class="scrollup">
+                <a href="#"><img src="../img/up.svg" alt="Arriba"></a>
+            </div>
+
+            <!-- Scrollup - Script -->
+            <script class="scroll-hide">
+
+                window.onscroll = function () {
+                    scrollFunction();
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.querySelector(".scrollup").style.display = "block";
+                    } else {
+                        document.querySelector(".scrollup").style.display = "none";
+                    }
+                }
+                // Cuando el usuario hace clic en el botón, nos va a llevar hacia arriba de la página
+                document.querySelector(".scrollup").addEventListener("click", function (event) {
+                    event.preventDefault();
+                    document.body.scrollTop = 0; // Para Safari
+                    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+                });
+            </script>
         </div>
+
+        <!-- SCRIPT - Whatsapp Flotante -->
+
+        <script class="wa" type="text/javascript">
+            window.onload = function () {
+                (function (d, script) {
+                    script = d.createElement('script');
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '../js/wa.js';
+                    d.getElementsByTagName('head')[0].appendChild(script);
+                }(document));
+            };
+        </script>
+
+        <!-- SCRIPT - navbar se transforma al scrolear -->
+
+        <script>
+            window.addEventListener('scroll', function () {
+                const navbarTitulo = document.querySelector('.navbar-titulo');
+                const navbarLogo = document.querySelector('.navbar-logo');
+                const navbarText = document.querySelector('.navbar-text');
+
+                if (window.scrollY > 200) { // Puedes ajustar el valor según tus necesidades
+                    navbarTitulo.classList.add('scrolled');
+                    navbarLogo.classList.add('scrolled');
+                    navbarText.classList.add('scrolled');
+                } else {
+                    navbarTitulo.classList.remove('scrolled');
+                    navbarLogo.classList.remove('scrolled');
+                    navbarText.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+        <!-- SCRIPT - Enlace a los scripts de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     </footer>
 
 
 
-    <!-- SCRIPTS -->
 
-
-        <!-- SCRIPT - SCROLLUP FLOTANTE-->
-
-    <script class="scroll-hide">
-
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.querySelector(".scrollup").style.display = "block";
-            } else {
-                document.querySelector(".scrollup").style.display = "none";
-            }
-        }
-        // Cuando el usuario hace clic en el botón, nos va a llevar hacia arriba de la página
-        document.querySelector(".scrollup").addEventListener("click", function (event) {
-            event.preventDefault();
-            document.body.scrollTop = 0; // Para Safari
-            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
-        });
-    </script>
-    <!-- Script para que cuando el usuario se desplaza hacia abajo 20px desde la parte superior del documento, muestre el botón -->
-
-    <!-- SCRIPT - WHATSAPP FLOTANTE -->
-
-    <script class="wa" type="text/javascript">
-        window.onload = function () {
-            (function (d, script) {
-                script = d.createElement('script');
-                script.type = 'text/javascript';
-                script.async = true;
-                script.src = '../js/wa.js';
-                d.getElementsByTagName('head')[0].appendChild(script);
-            }(document));
-        };
-    </script>
-    <script src="../js/wa.js"></script>
-
-    <!-- SCRIPT - navbar se transforma al scrolear -->
-
-
-<script>
-    window.addEventListener('scroll', function() {
-        const navbarTitulo = document.querySelector('.navbar-titulo');
-        const navbarLogo = document.querySelector('.navbar-logo');
-        const navbarText = document.querySelector('.navbar-text');
-        
-        if (window.scrollY > 200) { // Puedes ajustar el valor según tus necesidades
-            navbarTitulo.classList.add('scrolled');
-            navbarLogo.classList.add('scrolled');
-            navbarText.classList.add('scrolled');
-        } else {
-            navbarTitulo.classList.remove('scrolled');
-            navbarLogo.classList.remove('scrolled');
-            navbarText.classList.remove('scrolled');
-        }
-    });
-</script>
-
-    <!-- Enlace a los scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

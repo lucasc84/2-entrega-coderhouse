@@ -1,7 +1,11 @@
-/* 1. CONFIGURACION PARA INDEX.HTML y residual para subpaginas */
+/* Formato de arbol . Numero - Numero Romano - Letra  */
 
 
-/* A. Reset CSS */
+
+/* 1.) CONFIGURACION PARA INDEX.HTML y residual para subpaginas */
+
+
+/* Reset CSS */
 /* Resetea las propiedades de margen y relleno y establece el modelo de caja en border-box. */
 
 * {
@@ -46,9 +50,7 @@ body {
 
 .contact-info a {
     color: #0C0C89;
-    /* Ajustar color del texto de los enlaces a verde y usar !important para asegurar el cambio */
     text-decoration: none;
-    /* Eliminar subrayado de los enlaces */
     margin-right: 10px;
 }
 
@@ -69,8 +71,8 @@ body {
 
 .banner-top a:hover img,
 .banner-top a:active img {
-    filter: brightness(0) invert(1);
     /* Cambia el color de las imagenes a blanco cuando hago hover o las cliqueo */
+    filter: brightness(0) invert(1);
 }
 
 
@@ -82,8 +84,6 @@ body {
     text-transform: uppercase;
     justify-content: space-between;
     padding: 20px;
-    /* justify-content: Asegura que los elementos hijos se distribuyan */
-    /* space-between: Distribuye los elementos hijos de manera que haya el máximo espacio posible entre ellos */
 }
 
 .titulo-logo img {
@@ -91,10 +91,7 @@ body {
     height: auto;
 }
 
-
-
 /* II. NAVBAR: Menú de navegación (basado en bootstrap) */
-
 
 .navbar {
     background-color: #ADD8E6;
@@ -104,9 +101,7 @@ body {
 
 .navbar-titulo {
     color: #0C0C89;
-    /* Color de los enlaces */
     text-decoration: none;
-    /* Asegúrate de que no haya subrayado */
     background-color: #83E2E2;
     font-weight: bold;
     border: 1px solid #0C0C89;
@@ -114,15 +109,14 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 15px;
-    /* border-radius: Redondea la esquina elegida del borde (ene ste caso todoas pero podes asignarle top-left etc */
+    /* border-radius: Redondea la esquina elegida del borde (en este caso todas pero podes asignarle top-left etc */
 }
 
-/* navbar - efectos links */
+/* navbar - estilos en links */
+
 .navbar-nav .nav-link {
     color: #0C0C89 !important;
-    /* Color de los enlaces */
     text-decoration: none;
-    /* Asegúrate de que no haya subrayado */
 }
 
 .navbar-nav .nav-link:hover {
@@ -184,15 +178,16 @@ body {
 
 /* A. Elementos en general */
 
-
 h3 {
     color: #83E2E2;
-    /* Color del texto */
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 28px;
     -webkit-text-stroke: 1px #0C0C89;
-    /* Contorno del texto  */
+}
+
+h4 {
+    font-size: 18px;
 }
 
 p {
@@ -201,9 +196,7 @@ p {
     text-align: justify;
 }
 
-h4 {
-    font-size: 18px;
-}
+
 
 /* B. Cita */
 .cita {
@@ -229,7 +222,6 @@ h4 {
 
 /* C. Contenedor Grid*/
 
-
 .contenedor-grid {
 
     display: grid;
@@ -245,7 +237,6 @@ h4 {
     align-items: center;
     justify-items: center;
 }
-
 
 .contenedor-grid img {
     width: 80%;
@@ -296,7 +287,6 @@ h4 {
 
 /* A. Pie de página */
 
-
 .copyright p {
     text-align: right;
     font-style: italic;
@@ -309,16 +299,13 @@ h4 {
     margin-bottom: 0px;
 }
 
-
-/* B. Scripts */ 
-
+/* B. Scripts */
 
 .whatsapp-btn {
     color: rgb(255, 255, 255);
     background-color: transparent !important;
     text-decoration: none;
 }
-
 
 .scrollup img {
     width: 50px;
@@ -333,10 +320,9 @@ h4 {
     /* Animación de respiración */
 }
 
+/* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
 
-
-/* SUBPAGINAS (solo aplicable a las subpaginas, ver si lo dejas por estetica en la principal */
-
+/*  Boton de home para todas las subáginas menos index.html */
 
 .home {
     height: 30px;
@@ -344,7 +330,11 @@ h4 {
     filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
 }
 
-/* PAGINA NOSOTROS */
+/* I. SUBPAGINA NOSOTROS */
+
+
+/* A. Ejemplos de inserción multimedia relativa y externa */
+
 .multimedia {
     text-align: right;
 }
@@ -353,15 +343,14 @@ h4 {
     text-align: right;
 }
 
+
+/* B. BOOTSTRAP - Carrousel */
+
 .carousel-caption h5 img {
     width: 30px;
-    /* Ajustá el tamaño a tu gusto */
     height: auto;
-    /* Mantiene la proporción */
     margin-right: 5px;
-    /* Agrega un pequeño espacio entre la imagen y el texto */
     vertical-align: middle;
-    /* Alinea la imagen con el texto */
 }
 
 .carousel-inner img {
@@ -374,25 +363,19 @@ h4 {
 
 .carousel-caption {
     max-width: 480px;
-    /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
     width: 100%;
     margin: 0 auto;
-    /* Centra el contenedor del texto horizontalmente */
     padding: 10px;
-    /* Espacio interno del contenedor del texto */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente para mejorar la legibilidad */
     border-radius: 8px;
-    /* Bordes redondeados */
     box-sizing: border-box;
-    /* Incluye el padding y el borde en el ancho y alto */
 }
 
-/* PAGINA DE CONTACTO */
+/* II. SUBPAGINA DE CONTACTO */
 
 
 
-/* Estilo general para el formulario */
+/* A. formulario */
 
 form.contacto {
     width: 90%;
@@ -402,8 +385,6 @@ form.contacto {
     border-radius: 8px;
     background-color: #ADD8E6;
 }
-
-
 
 form.contacto label {
     display: block;
@@ -436,17 +417,18 @@ form.contacto button:hover {
     background-color: #004a99;
 }
 
+/* B. Mapa insertado */
 
 #mapa {
     width: 48%;
-
     color: #0C0C89;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: #ADD8E6;
-    /* Color de fondo */
 }
+
+/* C. BOOTSTRAP - Cards */
 
 .card {
     margin: 20px auto;
@@ -473,16 +455,19 @@ form.contacto button:hover {
 }
 
 
-
-/* MEDIA QUERIES */
-/* TELEFONO (hasta 500px) CAMBIARRR ESTA EN 700para probar en pc*/
-/* TABLET (hasta 1000px) solo para el TP final*/
+/* 3.) MEDIA QUERIES */
+/* TELEFONO (hasta 500px) CAMBIARR ESTA EN 700 para probar en pc*/
+/* TABLET (hasta 992px) solo para el TP final*/
 
 @media (max-width: 500px) {
+
+    /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
     .navbar-logo.scrolled {
         display: none !important;
     }
 }
+
+/* TAMAÑO PEQUEÑO (SERÍA MOBILE) para segunda entrega*/
 
 @media (max-width:992px) {
 
@@ -492,12 +477,10 @@ form.contacto button:hover {
 
     h1 {
         font-size: 22px;
-        /* Ajustar tamaño de fuente */
     }
 
     h2 {
         font-size: 16px;
-        /* Ajustar tamaño de fuente */
     }
 
     .titulo-logo {
@@ -506,12 +489,7 @@ form.contacto button:hover {
 
     .titulo-logo img[src*="logo.png"] {
         width: 120px;
-        /* Reducir el tamaño de la imagen */
         height: auto;
-        /* Mantener la proporción de la imagen */
-        /* Mantener la imagen a la derecha */
-        /* display: block; */
-        /* Asegurar que la imagen se comporte como un bloque */
     }
 
     .navbar-titulo {
@@ -520,9 +498,7 @@ form.contacto button:hover {
 
     .navbar-titulo-movil {
         color: #0C0C89 !important;
-        /* Color de los enlaces */
         text-decoration: none;
-        /* Asegúrate de que no haya subrayado */
         background-color: #83E2E2;
         font-weight: bold;
         font-size: 16px;
@@ -532,7 +508,6 @@ form.contacto button:hover {
         padding-left: 10px;
         border-radius: 15px;
         animation: blink 2s infinite;
-        /* Aplica la animación */
     }
 
     .navbar-text.scrolled {
@@ -545,19 +520,15 @@ form.contacto button:hover {
     .navbar-toggler:focus,
     .navbar-toggler:active {
         outline: none;
-        /* Elimina el contorno predeterminado */
     }
 
     /* CONTENEDOR GRID*/
-
 
     .contenedor-grid {
 
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        /* Ajusta las filas automáticamente */
-
         padding-top: 50px;
         grid-template-areas:
             "titulo"
@@ -567,9 +538,7 @@ form.contacto button:hover {
             "texto2"
             "foto3"
             "texto3";
-
     }
-
 
     .contenedor-grid img {
         width: 100% !important;
@@ -577,7 +546,6 @@ form.contacto button:hover {
         height: auto !important;
         /* Mantiene la proporción de la imagen */
         justify-self: center;
-
     }
 
     .contenedor-grid p {
@@ -611,7 +579,6 @@ form.contacto button:hover {
         grid-area: texto2;
     }
 
-
     .grid-texto-3 {
         grid-area: texto3;
     }
@@ -619,13 +586,10 @@ form.contacto button:hover {
     .copyright p {
         font-size: 12px;
         text-align: center;
-
     }
 
+
     /* PAGINA CONTACTO */
-
-
-
 
     form.contacto label {
         display: block;
@@ -633,15 +597,12 @@ form.contacto button:hover {
         font-size: 0.8rem;
         color: #000000;
         text-align: center;
-
     }
 
     form.contacto h5 {
         font-size: 1rem;
         justify-self: center;
         text-align: center;
-
-
     }
 
     form.contacto button {
@@ -649,7 +610,9 @@ form.contacto button:hover {
         font-size: 0.8rem;
     }
 
-
+    #mapa {
+        width: 90%;
+    }
 
     #mapa h5 {
         font-size: 1rem;
@@ -663,6 +626,8 @@ form.contacto button:hover {
         border-radius: 8px;
         color: #0C0C89;
         background-color: #ADD8E6;
+        text-align: center;
+
     }
 
     .card p {
@@ -674,6 +639,8 @@ form.contacto button:hover {
 
     .btn.btn-primary {
         background-color: #0C0C89;
+        display: inline-block;
+
     }
 
     .btn.btn-primary:hover {
@@ -692,9 +659,6 @@ form.contacto button:hover {
 
     /* PAGINA NOSOTROS */
 
-
-
-
     .carousel-caption {
         max-height: 190px;
     }
@@ -706,8 +670,6 @@ form.contacto button:hover {
     .carousel-item p {
         font-size: 12px;
     }
-
-
 
     .main-nosotros,
     .main-nosotros p {
@@ -723,46 +685,18 @@ form.contacto button:hover {
         text-align: center;
     }
 
-
-
-
     .carousel-caption {
         max-width: 70%;
-        /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
         width: 100%;
         margin: 0 auto;
-        /* Centra el contenedor del texto horizontalmente */
         padding: 10px;
-        /* Espacio interno del contenedor del texto */
         background-color: rgba(0, 0, 0, 0.5);
-        /* Fondo semitransparente para mejorar la legibilidad */
         border-radius: 8px;
-        /* Bordes redondeados */
         box-sizing: border-box;
-        /* Incluye el padding y el borde en el ancho y alto */
     }
 
-    /* PAGINA CONTACTO */
 
-
-
-    #mapa {
-        width: 90%;
-
-    }
-
-    .card {
-        text-align: center;
-    }
-
-    .btn.btn-primary {
-        display: inline-block;
-
-
-    }
-
-    /* KEYFRAMES (ANIMACIONES */
-
+    /* 4.) KEYFRAMES (animación) */
 
     @keyframes blink {
         0% {
