@@ -343,6 +343,14 @@ p {
     text-align: right;
 }
 
+.musica {
+    margin-top: 20px;
+}
+
+.video {
+    margin-top: 20px;
+}
+
 
 /* B. BOOTSTRAP - Carrousel */
 
@@ -674,10 +682,6 @@ form.contacto button:hover {
     .main-nosotros,
     .main-nosotros p {
         text-align: center;
-    }
-
-    .multimedia {
-        margin-top: 20px;
     }
 
     .multimedia,
