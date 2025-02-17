@@ -1,15 +1,30 @@
-/* Reset CSS */
+/* 1. CONFIGURACION PARA INDEX.HTML y residual para subpaginas */
+
+
+/* A. Reset CSS */
+/* Resetea las propiedades de margen y relleno y establece el modelo de caja en border-box. */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
 
-/* Resetea las propiedades de margen y relleno y establece el modelo de caja en border-box. */
+/* BODY - Configuración general */
 
+body {
+    background-color: #006290;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: "Ubuntu", serif;
+    color: #FFFFFF;
+}
 
-/*     Banner de Encabezado - Contacto y Redes  */
+/* I. HEADER */
+
+/* A. Banner de Encabezado - Contacto y Redes  */
 
 .banner-top {
     width: 100%;
@@ -59,7 +74,7 @@
 }
 
 
-/* Banner Principal - Título y logo */
+/* B. Banner Principal - Título y logo */
 
 .titulo-logo {
     background-color: #0C0C89;
@@ -76,18 +91,9 @@
     height: auto;
 }
 
-/* body - Configuración general */
 
-body {
-    background-color: #006290;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    font-family: "Ubuntu", serif;
-    color: #FFFFFF;
-}
 
-/* Menú de navegación (basado en bootstrap) */
+/* II. NAVBAR: Menú de navegación (basado en bootstrap) */
 
 
 .navbar {
@@ -112,8 +118,6 @@ body {
 }
 
 /* navbar - efectos links */
-
-
 .navbar-nav .nav-link {
     color: #0C0C89 !important;
     /* Color de los enlaces */
@@ -132,6 +136,7 @@ body {
     align-items: center;
 }
 
+/* navbar - sin scrollear */
 
 .navbar-fixed img.navbar-logo {
     display: none;
@@ -155,9 +160,7 @@ body {
 .navbar-logo.scrolled {
     display: block !important;
     height: 3em;
-    /* Permite que la imagen se ajuste automáticamente */
     max-height: 100% !important;
-    /* Asegura que la imagen no exceda la altura del contenedor */
     padding-left: 20px;
     filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
 }
@@ -166,7 +169,6 @@ body {
 .navbar-text.scrolled {
     display: block !important;
     margin: 0 10px;
-    /* Ajusta el margen según sea necesario */
     font-size: 26px;
     font-weight: bold;
     color: #0C0C89;
@@ -174,14 +176,14 @@ body {
 
 .navbar-collapse {
     width: auto;
-    /* Ajusta el ancho automáticamente según el contenido */
     max-width: 80%;
-    /* Opcional: establece un ancho máximo */
     margin: 0 auto;
-    /* Centra el menú horizontalmente */
 }
 
-/* MAIN - Contenido principal de la página */
+/* III. MAIN - Contenido principal de la página */
+
+/* A. Elementos en general */
+
 
 h3 {
     color: #83E2E2;
@@ -203,12 +205,10 @@ h4 {
     font-size: 18px;
 }
 
-/* Cita */
+/* B. Cita */
 .cita {
     margin: 0 0 10px 50px;
-    /* Ajustar margen para añadir espacio vertical */
     padding: 3px 25px;
-    /* Aumentar el padding para añadir más espacio */
     font-style: italic;
     text-align: right;
     color: rgb(131, 226, 226);
@@ -217,7 +217,6 @@ h4 {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-
 }
 
 #leonardo {
@@ -226,10 +225,9 @@ h4 {
     font-weight: bold;
     color: #FFFFFF;
     margin-bottom: 2px;
-    /* Ajusta el margen inferior */
 }
 
-/* CONTENEDOR GRID*/
+/* C. Contenedor Grid*/
 
 
 .contenedor-grid {
@@ -243,13 +241,9 @@ h4 {
         "foto1 texto1 texto1"
         "foto1 foto2 foto2"
         "texto2 foto3 texto3";
-    /* acomoda la grilla */
     justify-content: center;
-    /* acomoda a los hijos */
     align-items: center;
-    /*vertical*/
     justify-items: center;
-    /*horizontal*/
 }
 
 
@@ -298,8 +292,9 @@ h4 {
 }
 
 
-/* FOOTER */
+/* IV. FOOTER - Pie de página y scripts */
 
+/* A. Pie de página */
 
 
 .copyright p {
@@ -315,7 +310,7 @@ h4 {
 }
 
 
-/* SCRIPTS */
+/* B. Scripts */ 
 
 
 .whatsapp-btn {
@@ -359,10 +354,14 @@ h4 {
 }
 
 .carousel-caption h5 img {
-    width: 30px;  /* Ajustá el tamaño a tu gusto */
-    height: auto; /* Mantiene la proporción */
-    margin-right: 5px; /* Agrega un pequeño espacio entre la imagen y el texto */
-    vertical-align: middle; /* Alinea la imagen con el texto */
+    width: 30px;
+    /* Ajustá el tamaño a tu gusto */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-right: 5px;
+    /* Agrega un pequeño espacio entre la imagen y el texto */
+    vertical-align: middle;
+    /* Alinea la imagen con el texto */
 }
 
 .carousel-inner img {
@@ -371,16 +370,22 @@ h4 {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    }
+}
 
-    .carousel-caption {
-    max-width: 480px; /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
+.carousel-caption {
+    max-width: 480px;
+    /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
     width: 100%;
-    margin: 0 auto; /* Centra el contenedor del texto horizontalmente */
-    padding: 10px; /* Espacio interno del contenedor del texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
-    border-radius: 8px; /* Bordes redondeados */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+    margin: 0 auto;
+    /* Centra el contenedor del texto horizontalmente */
+    padding: 10px;
+    /* Espacio interno del contenedor del texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho y alto */
 }
 
 /* PAGINA DE CONTACTO */
@@ -621,7 +626,7 @@ form.contacto button:hover {
 
 
 
-    
+
     form.contacto label {
         display: block;
         margin-bottom: 5px;
@@ -630,7 +635,7 @@ form.contacto button:hover {
         text-align: center;
 
     }
-    
+
     form.contacto h5 {
         font-size: 1rem;
         justify-self: center;
@@ -638,12 +643,12 @@ form.contacto button:hover {
 
 
     }
-    
+
     form.contacto button {
         padding: 5px;
         font-size: 0.8rem;
     }
- 
+
 
 
     #mapa h5 {
@@ -651,7 +656,7 @@ form.contacto button:hover {
         justify-self: center;
         text-align: center;
     }
-    
+
     .card {
         margin: 20px auto;
         padding: 20px;
@@ -660,21 +665,21 @@ form.contacto button:hover {
         background-color: #ADD8E6;
     }
 
-.card p {
+    .card p {
         font-size: 1rem;
         justify-self: center;
         text-align: center;
     }
-    
-    
+
+
     .btn.btn-primary {
         background-color: #0C0C89;
     }
-    
+
     .btn.btn-primary:hover {
         background-color: #004a99;
     }
-    
+
     .card img {
         width: 20px;
         height: 20px;
@@ -682,25 +687,26 @@ form.contacto button:hover {
         margin-left: 15px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
     }
-    
-    
+
+
 
     /* PAGINA NOSOTROS */
 
 
 
-    
-        .carousel-caption {
+
+    .carousel-caption {
         max-height: 190px;
     }
 
     .carousel-item h5 {
         font-size: 14px;
     }
+
     .carousel-item p {
         font-size: 12px;
     }
-    
+
 
 
     .main-nosotros,
@@ -721,23 +727,29 @@ form.contacto button:hover {
 
 
     .carousel-caption {
-        max-width: 70%; /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
+        max-width: 70%;
+        /* Asegura que el contenedor del texto no exceda el tamaño de las imágenes */
         width: 100%;
-        margin: 0 auto; /* Centra el contenedor del texto horizontalmente */
-        padding: 10px; /* Espacio interno del contenedor del texto */
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
-        border-radius: 8px; /* Bordes redondeados */
-        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+        margin: 0 auto;
+        /* Centra el contenedor del texto horizontalmente */
+        padding: 10px;
+        /* Espacio interno del contenedor del texto */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Fondo semitransparente para mejorar la legibilidad */
+        border-radius: 8px;
+        /* Bordes redondeados */
+        box-sizing: border-box;
+        /* Incluye el padding y el borde en el ancho y alto */
     }
 
     /* PAGINA CONTACTO */
 
 
 
-#mapa {
-    width: 90%;
+    #mapa {
+        width: 90%;
 
-}
+    }
 
     .card {
         text-align: center;
